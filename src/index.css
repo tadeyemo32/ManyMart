@@ -1,0 +1,91 @@
+:root {
+  /* Many Mart Color Palette - Based on Logo */
+  --primary-orange: #E8863A;
+  --primary-orange-light: #F5A05A;
+  --primary-orange-dark: #C96B2A;
+  --gold-accent: #D4A54A;
+  
+  --charcoal-dark: #1A1A1A;
+  --charcoal: #2D2D2D;
+  --charcoal-light: #3D3D3D;
+  
+  --cream: #FFF8F0;
+  --cream-dark: #F5EBE0;
+  --white: #FFFFFF;
+  
+  --text-dark: #1A1A1A;
+  --text-light: #F5F5F5;
+  --text-muted: #888888;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  --font-chinese: 'Noto Sans SC', sans-serif;
+  
+  /* Spacing */
+  --section-padding: 100px;
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--charcoal-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-orange);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-orange-light);
+}
+
+/* Utility classes */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-chinese);
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 2rem;
+}
